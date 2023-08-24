@@ -19,7 +19,7 @@
 
 
 // makes undo perform left shift z rather than y
-// #define MIRYOKU_CLIPBOARD_MAC
+#define MIRYOKU_CLIPBOARD_MAC
 
 // enable mouse keys pr
 #define MIRYOKU_KLUDGE_MOUSEKEYSPR
