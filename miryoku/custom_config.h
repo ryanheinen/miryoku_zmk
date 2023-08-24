@@ -50,7 +50,7 @@ U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp 
 &kp O,             &kp I,             &kp U,              &kp Y,             &kp T,                   &kp R,             &kp E,             &kp W,             &kp Q,             &kp TAB,             \
 &kp L,             &kp K,             &kp J,              &kp H,             &kp G,                   &kp F,             &kp A,             &kp S,             &kp D,             &kp LSHFT,           \
 &kp DOT,           &kp COMMA,         &kp M,              &kp N,             &kp B,                   &kp V,             &kp C,             &kp X,             &kp Z,             &kp LCTRL,           \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_LT(U_MOUSE, TAB),      &kp SPACE,         U_LT(U_NUM, &kp ESC),          &kp LALT,           U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_LT(U_MOUSE, TAB),      &kp SPACE,         &kp BSPC,          &kp DEL,           U_NP,              U_NP
 
 // copy of MIRYOKU_ALTERNATIVES_MOUSE with GAME toggle added
 #define MIRYOKU_LAYER_MOUSE \
