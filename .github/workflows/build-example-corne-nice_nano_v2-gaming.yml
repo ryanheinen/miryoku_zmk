@@ -1,0 +1,15 @@
+# Copyright 2022 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'Build Example corne nice_nano_v2 gaming'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["nice_nano_v2"]'
+      shield: '["corne_left","corne_right"]'
+      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_MOUSE=y"]'
+      branches: '["zmkfirmware/zmk/main urob/zmk/mouse-3.2"]'
+      clipboard: '["Mac"]'
