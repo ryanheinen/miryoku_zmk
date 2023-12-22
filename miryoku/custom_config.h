@@ -21,7 +21,7 @@
 // #define MIRYOKU_CLIPBOARD_MAC
 
 // enable mouse keys pr
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+// #define MIRYOKU_KLUDGE_MOUSEKEYSPR
 
 // copy of MIRYOKU_ALTERNATIVES_BASE_QWERTY with KC_SCLN swapped for KC_QUOT
 #define MIRYOKU_LAYER_BASE \
