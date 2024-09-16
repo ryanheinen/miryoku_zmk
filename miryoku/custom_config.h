@@ -51,7 +51,7 @@ U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp 
 &kp O,             &kp I,             &kp U,              &kp Y,             &kp T,                   &kp R,             &kp E,             &kp W,             &kp Q,             &kp TAB,             \
 &kp L,             &kp K,             &kp J,              &kp H,             &kp G,                   &kp F,             &kp A,             &kp S,             &kp D,             &kp LSHFT,           \
 &kp DOT,           &kp COMMA,         &kp M,              &kp N,             &kp B,                   &kp V,             &kp C,             &kp X,             &kp Z,             &kp LCTRL,           \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_LT(U_MOUSE, TAB),      &kp SPACE,         U_LT(U_FUN_FLIP, ESC),  U_LT(U_NUM_FLIP, LALT), U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_LT(U_MOUSE, TAB),      &kp SPACE,         U_LT(U_POE, ESC),  U_LT(U_NUM_FLIP, LALT), U_NP,              U_NP
 
 // copy of MIRYOKU_ALTERNATIVES_NUM_FLIP with SEMI replaced with N0, and right thumbs replaced with NA
 #define MIRYOKU_LAYER_NUM_FLIP \
@@ -61,11 +61,15 @@ U_NA,              &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,               U_NA,              U_NA,              U_NP,              U_NP
 
 // copy of MIRYOKU_ALTERNATIVES_FUN_FLIP with right thumbs replaced with to NA
-#define MIRYOKU_LAYER_FUN_FLIP \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp PSCRN,         &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp SLCK,          &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
-U_NA,              &kp RALT,          &u_to_U_MEDIA,     &u_to_U_FUN,       U_NA,              &kp PAUSE_BREAK,   &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+#define MIRYOKU_LAYER_POE \
+&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &kp F9,       U_BOOT,            \
+&kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              &kp LSHFT,         &kp F5,         &kp LALT,          &kp LGUI,          \
+&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
+U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+// U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp PSCRN,         &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
+// &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp SLCK,          &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
+// U_NA,              &kp RALT,          &u_to_U_MEDIA,     &u_to_U_FUN,       U_NA,              &kp PAUSE_BREAK,   &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
+// U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 
 // copy of MIRYOKU_ALTERNATIVES_MOUSE with GAME toggle added
 #define MIRYOKU_LAYER_MOUSE \
@@ -86,10 +90,10 @@ MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym") \
 MIRYOKU_X(FUN,    "Fun") \
 MIRYOKU_X(NUM_FLIP,    "NumFlip") \
-MIRYOKU_X(FUN_FLIP,    "FunFlip")
+MIRYOKU_X(POE,    "PoE")
 
 #define MIRYOKU_LAYERMAPPING_NUM_FLIP MIRYOKU_MAPPING
-#define MIRYOKU_LAYERMAPPING_FUN_FLIP MIRYOKU_MAPPING
+#define MIRYOKU_LAYERMAPPING_POE MIRYOKU_MAPPING
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -102,4 +106,4 @@ MIRYOKU_X(FUN_FLIP,    "FunFlip")
 #define U_SYM    8
 #define U_FUN    9
 #define U_NUM_FLIP 10
-#define U_FUN_FLIP    11
+#define U_POE    11
