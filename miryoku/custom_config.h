@@ -51,7 +51,7 @@ U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp 
 &kp O,             &kp I,             &kp U,              &kp Y,             &kp T,                   &kp R,             &kp E,             &kp W,             &kp Q,             &kp TAB,             \
 &kp L,             &kp K,             &kp J,              &kp H,             &kp G,                   &kp F,             &kp A,             &kp S,             &kp D,             &kp LSHFT,           \
 &kp DOT,           &kp COMMA,         &kp M,              &kp N,             &kp B,                   &kp V,             &kp C,             &kp X,             &kp Z,             &kp LCTRL,           \
-U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_LT(U_MOUSE, TAB),      &kp SPACE,         U_LT(U_NUM_FLIP, ESC),  U_LT(U_POE, LALT), U_NP,              U_NP
+U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_LT(U_MOUSE, TAB),      &kp SPACE,         U_LT(U_POE, ESC),  U_LT(U_NUM_FLIP, LALT), U_NP,              U_NP
 
 // copy of MIRYOKU_ALTERNATIVES_NUM_FLIP with SEMI replaced with N0, and right thumbs replaced with NA
 #define MIRYOKU_LAYER_NUM_FLIP \
@@ -60,7 +60,7 @@ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA
 U_NA,              &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA,              &kp BSLH,          &kp N1,            &kp N2,            &kp N3,            &kp GRAVE,         \
 U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,               U_NA,              U_NA,              U_NP,              U_NP
 
-// copy of MIRYOKU_ALTERNATIVES_FUN with F5 and F9 addeded
+// copy of MIRYOKU_ALTERNATIVES_FUN_FLIP with right thumbs replaced with to NA
 #define MIRYOKU_LAYER_POE \
 &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &kp F9,       U_BOOT,            \
 &kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         U_NA,              &kp LSHFT,         &kp F5,         &kp LALT,          &kp LGUI,          \
