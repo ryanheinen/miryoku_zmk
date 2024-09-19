@@ -17,10 +17,10 @@
   #define U_UND &kp LG(Z)
 #elif defined (MIRYOKU_CLIPBOARD_WIN)
   #define U_RDO &kp LC(T)
-  #define U_PST &kp LC(.)
+  #define U_PST &kp LC(DOT)
   #define U_CPY &kp LC(I)
   #define U_CUT &kp LC(B)
-  #define U_UND &kp LC(/)
+  #define U_UND &kp LC(SLASH)
 #else
   #define U_RDO &kp K_AGAIN
   #define U_PST &kp LS(INS)
