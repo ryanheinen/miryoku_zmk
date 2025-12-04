@@ -1,0 +1,25 @@
+From badea54fb007d26604e278549cf5ecc10c4b77a7 Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Wed, 18 Sep 2024 14:19:58 -0700
+Subject: [PATCH 14/27] Use windows clipboard setting
+
+---
+ miryoku/custom_config.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index d4d9f98..ce57111 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -11,7 +11,7 @@
+ 
+ // AUTO_SHIFT_ENABLE=no
+ //#define MIRYOKU_ALPHAS_QWERTY
+-// MIRYOKU_CLIPBOARD=MAC
++MIRYOKU_CLIPBOARD=WIN
+ // CONSOLE_ENABLE=yes
+ 
+ 
+-- 
+2.52.0
+

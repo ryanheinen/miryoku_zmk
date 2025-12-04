@@ -1,0 +1,33 @@
+From 5f43f3d0a7cf9178bad61deae61066c6ddb01677 Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Wed, 18 Sep 2024 19:59:44 -0700
+Subject: [PATCH 16/27] Update windows clipboard keys
+
+---
+ miryoku/miryoku_clipboard.h | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/miryoku/miryoku_clipboard.h b/miryoku/miryoku_clipboard.h
+index de932ad..0626758 100644
+--- a/miryoku/miryoku_clipboard.h
++++ b/miryoku/miryoku_clipboard.h
+@@ -16,11 +16,11 @@
+   #define U_CUT &kp LG(X)
+   #define U_UND &kp LG(Z)
+ #elif defined (MIRYOKU_CLIPBOARD_WIN)
+-  #define U_RDO &kp LC(Y)
+-  #define U_PST &kp LC(V)
+-  #define U_CPY &kp LC(C)
+-  #define U_CUT &kp LC(X)
+-  #define U_UND &kp LC(Z)
++  #define U_RDO &kp LC(t)
++  #define U_PST &kp LC(.)
++  #define U_CPY &kp LC(i)
++  #define U_CUT &kp LC(b)
++  #define U_UND &kp LC(/)
+ #else
+   #define U_RDO &kp K_AGAIN
+   #define U_PST &kp LS(INS)
+-- 
+2.52.0
+

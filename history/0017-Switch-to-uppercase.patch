@@ -1,0 +1,30 @@
+From 02f182cea19c66e8298ff1c4025e72854b0e12aa Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Wed, 18 Sep 2024 20:27:48 -0700
+Subject: [PATCH 17/27] Switch to uppercase
+
+---
+ miryoku/miryoku_clipboard.h | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/miryoku/miryoku_clipboard.h b/miryoku/miryoku_clipboard.h
+index 0626758..7993a05 100644
+--- a/miryoku/miryoku_clipboard.h
++++ b/miryoku/miryoku_clipboard.h
+@@ -16,10 +16,10 @@
+   #define U_CUT &kp LG(X)
+   #define U_UND &kp LG(Z)
+ #elif defined (MIRYOKU_CLIPBOARD_WIN)
+-  #define U_RDO &kp LC(t)
++  #define U_RDO &kp LC(T)
+   #define U_PST &kp LC(.)
+-  #define U_CPY &kp LC(i)
+-  #define U_CUT &kp LC(b)
++  #define U_CPY &kp LC(I)
++  #define U_CUT &kp LC(B)
+   #define U_UND &kp LC(/)
+ #else
+   #define U_RDO &kp K_AGAIN
+-- 
+2.52.0
+

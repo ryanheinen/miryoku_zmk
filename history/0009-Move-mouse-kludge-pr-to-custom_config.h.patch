@@ -1,0 +1,36 @@
+From 358836bab272237fcd3c579ceb8e1863ab3b6dcd Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Sun, 15 Sep 2024 14:51:36 -0700
+Subject: [PATCH 09/27] Move mouse kludge pr to custom_config.h
+
+---
+ miryoku/custom_config.h | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index e52253c..f4813fe 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -4,8 +4,10 @@
+ // #undef TAPPING_TERM
+ // #define TAPPING_TERM 150
+ 
+-#undef U_TAPPING_TERM
+-#define U_TAPPING_TERM 150
++// #undef U_TAPPING_TERM
++// #define U_TAPPING_TERM 150
++
++#define MIRYOKU_KLUDGE_MOUSEKEYSPR
+ 
+ // AUTO_SHIFT_ENABLE=no
+ //#define MIRYOKU_ALPHAS_QWERTY
+@@ -100,4 +102,4 @@ MIRYOKU_X(FUN_FLIP,    "FunFlip")
+ #define U_SYM    8
+ #define U_FUN    9
+ #define U_NUM_FLIP 10
+-#define U_FUN_FLIP    11
+\ No newline at end of file
++#define U_FUN_FLIP    11
+-- 
+2.52.0
+

@@ -1,0 +1,30 @@
+From 0329c5da80a134f8da0d37eadee623a0d2f260d1 Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Wed, 13 Dec 2023 13:28:19 -0800
+Subject: [PATCH 01/27] Add ZMK to the workspace
+
+---
+ miryoku/miryoku_zmk-1.code-workspace | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 miryoku/miryoku_zmk-1.code-workspace
+
+diff --git a/miryoku/miryoku_zmk-1.code-workspace b/miryoku/miryoku_zmk-1.code-workspace
+new file mode 100644
+index 0000000..36f2503
+--- /dev/null
++++ b/miryoku/miryoku_zmk-1.code-workspace
+@@ -0,0 +1,10 @@
++{
++  "folders": [
++    {
++      "path": ".."
++    },
++    {
++      "path": "../../zmk"
++    }
++  ]
++}
+\ No newline at end of file
+-- 
+2.52.0
+

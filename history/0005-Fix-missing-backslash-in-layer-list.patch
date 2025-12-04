@@ -1,0 +1,25 @@
+From a09639fe489f8415b1b43da6b8ad1c94dacbbc65 Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Sat, 14 Sep 2024 21:37:27 -0700
+Subject: [PATCH 05/27] Fix missing backslash in layer list
+
+---
+ miryoku/custom_config.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index 70703d7..de5d77a 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -82,7 +82,7 @@ MIRYOKU_X(MOUSE,  "Mouse") \
+ MIRYOKU_X(MEDIA,  "Media") \
+ MIRYOKU_X(NUM,    "Num") \
+ MIRYOKU_X(SYM,    "Sym") \
+-MIRYOKU_X(FUN,    "Fun")
++MIRYOKU_X(FUN,    "Fun") \
+ MIRYOKU_X(NUM_FLIP,    "Num Flip") \
+ MIRYOKU_X(FUN_FLIP,    "Fun Flip")
+ 
+-- 
+2.52.0
+

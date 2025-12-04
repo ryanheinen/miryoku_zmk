@@ -1,0 +1,25 @@
+From 1f03ba55f12473fb4a58e9e87a3005c3a420a085 Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Sun, 20 Oct 2024 21:18:06 -0700
+Subject: [PATCH 20/27] Change KC_SCLN to SEMI
+
+---
+ miryoku/custom_config.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index fde693c..719890d 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -29,7 +29,7 @@
+ #define RHEINEN_LAYER_BASE_DVORAK \
+ &kp SQT,           &kp COMMA,         &kp DOT,           &kp P,             &kp Y,             &kp F,             &kp G,             &kp C,             &kp R,             &kp L,             \
+ U_MT(LGUI, A),     U_MT(LALT, O),     U_MT(LCTRL, E),    U_MT(LSHFT, U),    &kp I,             &kp D,             U_MT(LSHFT, H),    U_MT(LCTRL, T),    U_MT(LALT, N),     U_MT(LGUI, S),     \
+-U_LT(U_BUTTON, KC_SCLN),U_MT(RALT, Q),     &kp J,             &kp K,             &kp X,             &kp B,             &kp M,             &kp W,             U_MT(RALT, V),     U_LT(U_BUTTON, Z), \
++U_LT(U_BUTTON, SEMI),U_MT(RALT, Q),     &kp J,             &kp K,             &kp X,             &kp B,             &kp M,             &kp W,             U_MT(RALT, V),     U_LT(U_BUTTON, Z), \
+ U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, SPACE),U_LT(U_MOUSE, TAB),U_LT(U_SYM, RET),  U_LT(U_NUM, BSPC), U_LT(U_FUN, DEL),  U_NP,              U_NP
+ 
+ // copy of MIRYOKU_ALTERNATIVES_BASE_QWERTY with KC_SCLN swapped for KC_QUOT
+-- 
+2.52.0
+

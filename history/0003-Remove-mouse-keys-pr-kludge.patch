@@ -1,0 +1,25 @@
+From 7886ca4455950a7d52c7505f06b8a580b3b004fd Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Fri, 22 Dec 2023 15:04:05 -0800
+Subject: [PATCH 03/27] Remove mouse keys pr kludge
+
+---
+ miryoku/custom_config.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index 3ea8b30..c0a0392 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -21,7 +21,7 @@
+ // #define MIRYOKU_CLIPBOARD_MAC
+ 
+ // enable mouse keys pr
+-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
++// #define MIRYOKU_KLUDGE_MOUSEKEYSPR
+ 
+ // copy of MIRYOKU_ALTERNATIVES_BASE_QWERTY with KC_SCLN swapped for KC_QUOT
+ #define MIRYOKU_LAYER_BASE \
+-- 
+2.52.0
+

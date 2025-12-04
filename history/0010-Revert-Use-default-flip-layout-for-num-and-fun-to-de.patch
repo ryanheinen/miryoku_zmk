@@ -1,0 +1,38 @@
+From b4b6b65841d79eb59da45fcae2ec15f5b9307932 Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Sun, 15 Sep 2024 14:56:14 -0700
+Subject: [PATCH 10/27] Revert "Use default flip layout for num and fun to
+ debug compile problem"
+
+This reverts commit f6e9382fbbc433ee32f84322ca286b60a9edd45b.
+---
+ miryoku/custom_config.h | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index f4813fe..70e28e1 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -56,16 +56,16 @@ U_NP,              U_NP,              U_LT(U_MEDIA, ESC), U_LT(U_NAV, RET),  U_L
+ // copy of MIRYOKU_ALTERNATIVES_NUM_FLIP with SEMI replaced with N0, and right thumbs replaced with NA
+ #define MIRYOKU_LAYER_NUM_FLIP \
+ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          \
+-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp EQUAL,         &kp N4,            &kp N5,            &kp N6,            &kp SEMI,          \
++&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp EQUAL,         &kp N4,            &kp N5,            &kp N6,            &kp N0,          \
+ U_NA,              &kp RALT,          &u_to_U_NAV,       &u_to_U_NUM,       U_NA,              &kp BSLH,          &kp N1,            &kp N2,            &kp N3,            &kp GRAVE,         \
+-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp MINUS,         &kp N0,            &kp DOT,           U_NP,              U_NP
++U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,               U_NA,              U_NA,              U_NP,              U_NP
+ 
+ // copy of MIRYOKU_ALTERNATIVES_FUN_FLIP with right thumbs replaced with to NA
+ #define MIRYOKU_LAYER_FUN_FLIP \
+ U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp PSCRN,         &kp F7,            &kp F8,            &kp F9,            &kp F12,           \
+ &kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp SLCK,          &kp F4,            &kp F5,            &kp F6,            &kp F11,           \
+ U_NA,              &kp RALT,          &u_to_U_MEDIA,     &u_to_U_FUN,       U_NA,              &kp PAUSE_BREAK,   &kp F1,            &kp F2,            &kp F3,            &kp F10,           \
+-U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp TAB,           &kp SPACE,         &kp K_APP,         U_NP,              U_NP
++U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              U_NP,              U_NP
+ 
+ // copy of MIRYOKU_ALTERNATIVES_MOUSE with GAME toggle added
+ #define MIRYOKU_LAYER_MOUSE \
+-- 
+2.52.0
+

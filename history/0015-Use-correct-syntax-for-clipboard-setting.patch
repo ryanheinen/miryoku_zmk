@@ -1,0 +1,25 @@
+From a538cc3a8bcc452790e67f76a3af20e8cdeed8fc Mon Sep 17 00:00:00 2001
+From: ryanheinen <ryan.heinen@gmail.com>
+Date: Wed, 18 Sep 2024 15:19:39 -0700
+Subject: [PATCH 15/27] Use correct syntax for clipboard setting
+
+---
+ miryoku/custom_config.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/miryoku/custom_config.h b/miryoku/custom_config.h
+index ce57111..7a342e9 100644
+--- a/miryoku/custom_config.h
++++ b/miryoku/custom_config.h
+@@ -11,7 +11,7 @@
+ 
+ // AUTO_SHIFT_ENABLE=no
+ //#define MIRYOKU_ALPHAS_QWERTY
+-MIRYOKU_CLIPBOARD=WIN
++#define MIRYOKU_CLIPBOARD_WIN
+ // CONSOLE_ENABLE=yes
+ 
+ 
+-- 
+2.52.0
+
