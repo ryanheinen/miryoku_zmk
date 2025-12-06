@@ -1,30 +1,3 @@
-// Copyright 2021 Manna Harbour
-// https://github.com/manna-harbour/miryoku
-
-// #undef TAPPING_TERM
-// #define TAPPING_TERM 150
-
-// #undef U_TAPPING_TERM
-// #define U_TAPPING_TERM 150
-
-#define MIRYOKU_KLUDGE_MOUSEKEYSPR
-
-// AUTO_SHIFT_ENABLE=no
-//#define MIRYOKU_ALPHAS_QWERTY
-#define MIRYOKU_CLIPBOARD_WIN
-// CONSOLE_ENABLE=yes
-
-
-// #define MASTER_RIGHT true
-// #define MIRYOKU_LAYER_NAMES BASE, EXTRA, BUTTON, NAV, MOUSE, MEDIA, NUM, SYM, FUN, NUM_FLIP, FUN_FLIP
-
-
-// makes undo perform left shift z rather than y
-// #define MIRYOKU_CLIPBOARD_MAC
-
-// enable mouse keys pr
-// #define MIRYOKU_KLUDGE_MOUSEKEYSPR
-
 // copy of #define MIRYOKU_ALTERNATIVES_BASE_DVORAK with KC_SCLN swapped for KC_QUOT
 #define RHEINEN_LAYER_BASE_DVORAK \
 &kp SQT,           &kp COMMA,         &kp DOT,           &kp P,             &kp Y,             &kp F,             &kp G,             &kp C,             &kp R,             &kp L,             \
